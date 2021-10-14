@@ -29,6 +29,7 @@ import Conversor from '@/components/conversor.vue';
   text-align: center;
   margin-top: 10px;
   color: rgb(2, 2, 20);
+  justify-content: space-between;
 
 }
 
