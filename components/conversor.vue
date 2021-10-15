@@ -2,10 +2,7 @@
 
   <div class="box">
       <div class="seletor">
-          
-
-          
-      <b-select v-model="moedaA" placeholder="Title" rounded>
+      <b-select v-model="moedaA" placeholder="USD" rounded>
                     <option value="USD">USD</option>
                     <option value="BTC">BTC</option>
                 </b-select>
@@ -13,7 +10,7 @@
                       </div>
                       <div class="outro">
       <b-field>
-            <b-numberinput type="is-info" v-model="moedaA_value" v-bind:placeholder="moedaA" rounded></b-numberinput>
+            <b-input v-model="moedaA_value" type="number" :placeholder="moedaA" rounded></b-input>
         </b-field>
     <b-button type="is-info" @click="converter">Converter</b-button>
     <h2>{{moedaB_value}} {{DePara}}</h2>
@@ -27,17 +24,17 @@
   export default {
 
     name: "Conversor",
-    props: [
-        "moedaB",
-
-        ],
+    props:     
+     [
+        'moedaB'
+     ],
 
     data(){
         return {
             moedaA_value: "",
-            moedaB_value: 0,
+            moedaB_value: "",
             DePara: "",
-            moedaA:""
+            moedaA: "",
         }
     },
 
@@ -55,11 +52,9 @@
             .then(res => {
             return res.json();
             })
-             .then(json => {                 
+             .then(json => {       
                     const cotacao = json[DePara];
-                    this.moedaB_value = (cotacao * parseFloat(this.moedaA_value)).toFixed(
-                        2
-                );
+                    this.moedaB_value = parseFloat(cotacao * parseFloat(this.moedaA_value)).toFixed(2);
                 });
 
 
@@ -97,7 +92,7 @@
 
 .outro {
     padding: 20px;
-    max-width: 300px;
+    max-width: 150px;
     display: center;
 }
 
@@ -105,11 +100,15 @@ h1 {
     color: rgb(255, 255, 255);
     padding: 8px;
     margin-left: 10px;
+    font-family:monospace;
 }
 
 
 h2 {
-    color: blue;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);   
 }
 
 </style>

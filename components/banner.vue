@@ -1,6 +1,6 @@
 <template>
   <div id="main-banner">
-    <Conversor :moeda-a="this.moeda" moeda-b="BRL"/>
+    <Conversor :moeda-a="moeda" moeda-b="BRL"/>
   </div>
 </template>
 
@@ -10,23 +10,25 @@ import Conversor from '@/components/conversor.vue';
 export default {  
     name: "Banner",
 
+
+
+    components: {
+        Conversor
+    },
+
     data(){
         return {
 
       moeda:""
         }
-    },
-
-
-
-    components: {
-        Conversor
     }
     }
 </script>
 
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
   #main-banner {
     background-image: url('~/assets/img/background.png');
     background-position: 0 -250px;
@@ -34,7 +36,7 @@ export default {
     height: 100%;
     align-items: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
     text-align: center;
     color: rgb(2, 2, 20);
     padding: 20px 40px;
