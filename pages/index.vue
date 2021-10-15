@@ -1,24 +1,18 @@
 <template>
   
   <div id="app">
-    <Conversor moeda-a="USD" moeda-b="BRL"/>
-    <Conversor moeda-a="CAD" moeda-b="BRL"/>
-
-
-
+    <Banner />
   </div>
 
 
 </template>
-</template>
 
 <script>
-import Conversor from '@/components/conversor.vue';
+import Banner from '@/components/banner.vue'
   export default {
     components: {
-      Conversor
+      Banner
     }
-
   };
   
 </script>
@@ -27,10 +21,7 @@ import Conversor from '@/components/conversor.vue';
 #app {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-top: 10px;
   color: rgb(2, 2, 20);
   justify-content: space-between;
-
 }
-
 </style>

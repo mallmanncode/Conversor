@@ -1,22 +1,26 @@
 <template>
 
   <div class="box">
+      <div class="seletor">
+          
 
-      <h1> {{moedaA}} Para {{moedaB}}</h1>
-      <b-field type="is-info">
-            <b-input v-model="moedaA_value" v-bind:placeholder="moedaA"></b-input>
+          
+      <b-select v-model="moedaA" placeholder="Title" rounded>
+                    <option value="USD">USD</option>
+                    <option value="BTC">BTC</option>
+                </b-select>
+                      <h1>Para {{moedaB}}</h1>
+                      </div>
+                      <div class="outro">
+      <b-field>
+            <b-numberinput type="is-info" v-model="moedaA_value" v-bind:placeholder="moedaA" rounded></b-numberinput>
         </b-field>
-    <b-button type="is-light" inverted outlined value="Converter" @click="converter">Converter</b-button>
+    <b-button type="is-info" @click="converter">Converter</b-button>
     <h2>{{moedaB_value}} {{DePara}}</h2>
-    
-
-
-
-
+    </div>
     </div>
 
 
-</template>
 </template>
 
 <script>
@@ -24,8 +28,8 @@
 
     name: "Conversor",
     props: [
-        "moedaA",
-        "moedaB"
+        "moedaB",
+
         ],
 
     data(){
@@ -33,6 +37,7 @@
             moedaA_value: "",
             moedaB_value: 0,
             DePara: "",
+            moedaA:""
         }
     },
 
@@ -69,21 +74,42 @@
 
 <style scoped>
 
-.box {
+.seletor{
     padding: 20px;
     max-width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    
+    display: flex;
+    
+
+
+}
+.box {
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);  
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    margin-left: 200px;
+    background-image: url('~/assets/img/fundo.png');
+    background-position: 0 -50px;
+    background-size: cover;
+    
+}
+
+.outro {
+    padding: 20px;
+    max-width: 300px;
+    display: center;
 }
 
 h1 {
-    color: rgb(241, 16, 193);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    margin-left: 10px;
 }
+
 
 h2 {
     color: blue;
 }
 
-.button {
-    color: rgb(255, 0, 149);
-}
 </style>
