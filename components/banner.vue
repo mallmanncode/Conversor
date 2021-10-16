@@ -1,5 +1,5 @@
 <template>
-  <div id="main-banner">
+  <div id="box">
     <Conversor :moeda-a="moeda" moeda-b="BRL"/>
   </div>
 </template>
@@ -29,19 +29,14 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-  #main-banner {
+  #box {
     background-image: url('~/assets/img/background.png');
-    background-position: 0 -250px;
     background-size: cover;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto', Helvetica, sans-serif;
-    text-align: center;
-    color: rgb(2, 2, 20);
-    padding: 20px 40px;
-    width: 100%;
+    padding: 50px;
+    max-width: 1280;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);  
+    background-color: rgb(207, 207, 207);
+    display: inline-flex;
 
   }
 </style>
