@@ -14,7 +14,9 @@ export default {
 
     components: {
         Conversor
+      
     },
+
 
     data(){
         return {
@@ -39,4 +41,12 @@ export default {
     display: inline-flex;
 
   }
-</style>
+</style> 
+
+.box {
+   
+   
+    max-width: 100px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);  
+    background-color: rgb(207, 207, 207);
+    display: center;

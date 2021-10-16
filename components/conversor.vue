@@ -1,10 +1,19 @@
 <template>
 
   <div class="box">
+      <Logo />
   <div class="seletor">
       <b-select v-model="moedaA" placeholder="USD" rounded>
                     <option value="USD">Dólar Americano - USD</option>
+                    <option value="AUD">Dólar australiano  - AUD</option>
+                    <option value="CAD">Dólar canadense  - CAD</option>
                     <option value="BTC">Bitcoin - BTC</option>
+                    <option value="EUR">Euro - EUR</option>
+                    <option value="GBP">Libra esterlina  - GBP</option>
+                    <option value="JPY">Yen  - JPY</option>
+                    <option value="CNY">Yuan  - CNY</option>
+                    <option value="CHF">Franco suiço  - CHF</option>
+                    
                 </b-select>
                 </div>
                 <div class="texto">
@@ -16,15 +25,16 @@
             </div>
             <div class="botao">
     <b-button type="is-info" @click="converter">Converter</b-button>
-    <h2>{{moedaB_value}} {{DePara}}</h2>
     </div>
-
+    <h2>{{moedaB_value}} {{DePara}}</h2>
     </div>
 
 
 </template>
 
 <script>
+import Logo from '@/components/logo.vue'
+
   export default {
 
     name: "Conversor",
@@ -32,11 +42,17 @@
      [
         'moedaB'
      ],
+     components: {
+         Logo
+     },
+
+     
+
 
     data(){
         return {
             moedaA_value: "",
-            moedaB_value: "",
+            moedaB_value: "0",
             DePara: "",
             moedaA: "",
         }
@@ -75,17 +91,14 @@
 
 
 .box {
-    background-image: url('~/assets/img/fundo.png');
-    background-size: cover;
-    background-position: center;
     padding: 20px;
     max-width: 500px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);  
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(255, 255, 255);
     display: center;
 }
 .texto {
-    display: flex;
+    display: center;
 }
 .botao{
     display: center;
@@ -102,18 +115,18 @@
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 110, 255);
+    font-family: 'Roboto', sans-serif;    
     padding: 8px;
     margin-left: 10px;
-    font-family:monospace;
 }
 
 
 h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 110, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    text-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);   
+    text-shadow: 0 10px 10px 0 rgba(0, 0, 0, 10.2);   
 }
 
 </style>

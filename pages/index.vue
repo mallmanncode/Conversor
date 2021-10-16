@@ -3,7 +3,7 @@
   <div id="app">
     <Banner />
   </div>
-
+  
 
 </template>
 
