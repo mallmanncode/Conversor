@@ -17,7 +17,7 @@
                 </b-select>
                 </div>
                 <div class="texto">
-                      <h1>  para Real {{moedaB}}</h1>
+                      <h1>  para R$ - {{moedaB}}</h1>
                 </div>
                       <div class="valor">
                           
@@ -126,7 +126,7 @@ h2 {
     color: rgb(0, 110, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    text-shadow: 0 10px 10px 0 rgba(0, 0, 0, 10.2);   
+    margin-left: 10px;
 }
 
 </style>
