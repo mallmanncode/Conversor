@@ -35,7 +35,7 @@ export default {
     background-image: url('~/assets/img/background.png');
     background-size: cover;
     padding: 50px;
-    box-shadow: 0 30px 15px 0 rgba(0, 0, 0, 5.2);  
+    box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 5.2);  
     background-color: rgb(207, 207, 207);
     display: inline-flex;
 
