@@ -16,11 +16,10 @@ export default {
   #box {
     background-color: rgb(0, 110, 255);
     text-align: center;
-
-  }
+}
 h1 {
-  display: center;
   color: rgb(190, 189, 252);
+  font-size: 12px;
   flex-wrap: center;
   text-shadow: 2px 2px 1px black;
 }
