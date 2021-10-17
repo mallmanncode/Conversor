@@ -3,7 +3,7 @@
       <div class="texto">
   <h1> Um sitema 
   <a :href="'http://localhost:3000/'"> Lirio Code </a>
-   @2021 </h1>
+   &copy;2021 </h1>
   </div>
   </div>
 </template>
