@@ -106,11 +106,11 @@ import Logo from '@/components/logo.vue'
     padding-top: 10px;
 }
 .seletor{
-    display: flex;
+    display: center;
     margin-left: 10px;
 }
 .valor{
-    display: flex;
+    display: center;
     margin-left: 10px;
 }
 

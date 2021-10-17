@@ -18,17 +18,19 @@ export default {
   #box {
     background-color: rgb(0, 110, 255);
     text-align: center;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);  
-    padding: 5px;
-}
+    box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 5.2); 
+    max-width: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+ }
 
 h1 {
-    display: inline-flex;
     padding-inline: 10px;
-    color: rgb(136, 136, 136);
+    color: rgb(190, 190, 190);
 }
 a {
-    color: rgb(202, 216, 255);
+    color: rgb(83, 86, 255);
 }
 
 a:hover {

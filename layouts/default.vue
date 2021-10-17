@@ -32,24 +32,9 @@ export default {
 
 #app {
   font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
   text-align: center;
+  display: flex;
   color: rgb(2, 2, 20);
-  
-}
-
-.nav {
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 9.2);  
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      
-}
-.foo {
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 9.2);  
-      display: center;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      
 }
 </style>
