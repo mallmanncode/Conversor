@@ -35,18 +35,10 @@ export default {
     background-image: url('~/assets/img/background.png');
     background-size: cover;
     padding: 50px;
-    max-width: 1280;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);  
+    box-shadow: 0 30px 15px 0 rgba(0, 0, 0, 5.2);  
     background-color: rgb(207, 207, 207);
     display: inline-flex;
 
   }
 </style> 
 
-.box {
-   
-   
-    max-width: 100px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 5.2);  
-    background-color: rgb(207, 207, 207);
-    display: center;

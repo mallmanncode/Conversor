@@ -17,11 +17,11 @@
                 </b-select>
                 </div>
                 <div class="texto">
-                      <h1>  Para {{moedaB}}</h1>
+                      <h1>  para Real {{moedaB}}</h1>
                 </div>
                       <div class="valor">
+                          
             <b-input v-model="moedaA_value" type="number" :placeholder="moedaA" rounded></b-input>
-        </b-field>
             </div>
             <div class="botao">
     <b-button type="is-info" @click="converter">Converter</b-button>
@@ -38,13 +38,13 @@ import Logo from '@/components/logo.vue'
   export default {
 
     name: "Conversor",
+    components: {
+         Logo
+     },
     props:     
      [
         'moedaB'
      ],
-     components: {
-         Logo
-     },
 
      
 

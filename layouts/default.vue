@@ -1,17 +1,13 @@
 <template>
-  <div>
+  <div class="app">
     <section>
-      <div class="container column is-10">
-        <p> oi em cima </p>
+          <div class="nav">
+        <Navbar />
+        </div>
         <Nuxt />
-    <div class="footer">
-    <div class="box">
-  
-      <p> oi na box </p>
-
-    </div>
-      </div>
-      </div>
+        <div>
+        <Footer />
+        </div>
     </section>
 
   </div>
@@ -19,16 +15,35 @@
 </template>
 
 <script>
+import Navbar from '@/components/navbar.vue'
+import Footer from '@/components/footer.vue'
+
+export default {
+
+  components: {
+    Navbar,
+    Footer
+  }
+}
 
 </script>
 
 <style scoped>
 
-.footer {
-    padding-top: 100px;
+#app {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: rgb(2, 2, 20);
+  justify-content: space-between;
+
 }
 
-.box {
-    padding-top: 30px;
+.nav {
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 9.2);  
+      display: center;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      
 }
 </style>
