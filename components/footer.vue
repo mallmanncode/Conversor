@@ -1,8 +1,10 @@
 <template>
   <div id="box" >
-  <h1> Um sitema </h1>
+      <div class="texto">
+  <h1> Um sitema 
   <a :href="'http://localhost:3000/'"> Lirio Code </a>
-  <h1> @2021 </h1>
+   @2021 </h1>
+  </div>
   </div>
 </template>
 
@@ -20,11 +22,9 @@ export default {
     text-align: center;
     box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 5.2); 
     max-width: 400px;
-    display: flex;
     margin-left: auto;
     margin-right: auto;
  }
-
 h1 {
     padding-inline: 10px;
     color: rgb(190, 190, 190);

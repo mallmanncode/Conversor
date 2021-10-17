@@ -20,7 +20,6 @@ import Banner from '@/components/banner.vue'
 <style>
 #app {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
   text-align: center;
   display: flex;
   color: rgb(2, 2, 20);

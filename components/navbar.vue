@@ -19,7 +19,7 @@ export default {
     box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 5.2); 
     padding: 8px;
     max-width: 500px;
-    display: flex;
+    display: center;
     margin-left: auto;
     margin-right: auto;
  }
